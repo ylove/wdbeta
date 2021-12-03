@@ -17,3 +17,9 @@ This project was originally based on a clone of the Pancake application. This is
 - "Rewards Dashboard" is currently live, and accessible from version 1.0 of the site. The functionality should work for any future tokens or projects.
 - The repository leverages Typescript heavily, but you can also develop in Javascript at the same time if you prefer.
 - Most of the components are written as React functional components, but classes should be used if managing state is too complex. (For instance, initializing the `useState` hook with `useState(true)` is one thing, `useState(data.map(() => {...}))` probably means that a class would be more readable).
+
+## Getting started
+
+- `cd` into project directory.
+- `yarn install` dependencies.
+- `yarn start` will start up the dev server at `http://localhost:3000` .
