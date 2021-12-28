@@ -387,14 +387,14 @@ export default function Roadmap() {
                 {t('NFT Creator')}
               </Text>
             </Box>
-            <a href="#" target="_blank" rel="noreferrer">
+            {/*<a href="#" target="_blank" rel="noreferrer">
               <Box style={iconContainerStyle}>
                 <Mshtml32528 style={iconStyle} />
                 <Text color="white" fontSize="20px" textAlign="center">
                   {t('Marketing')}
                 </Text>
               </Box>
-            </a>
+            </a>*/}
             <a href="https://www.windoge95.com/games" target="_blank" rel="noreferrer">
               <Box style={iconContainerStyle}>
                 <Gcdef100 style={iconStyle} />
@@ -450,10 +450,7 @@ export default function Roadmap() {
               </List.Item>
               <List.Item icon={<Mspaint variant="32x32_4" />} onClick={() => toggleNFTCreator(true)}>
                 NFT Creator
-              </List.Item>
-              <a href="#" target="_blank" rel="noreferrer">
-                <List.Item icon={<Mshtml32528 variant="32x32_4" />}>Marketing</List.Item>
-              </a>
+              </List.Item>            
               <a href="https://www.windoge95.com/games" target="_blank" rel="noreferrer">
                 <List.Item icon={<Gcdef100 variant="32x32_4" />}>Arcade</List.Item>
               </a>
