@@ -387,14 +387,14 @@ export default function Roadmap() {
                 {t('NFT Creator')}
               </Text>
             </Box>
-            {/*<a href="#" target="_blank" rel="noreferrer">
+            {/* <a href="#" target="_blank" rel="noreferrer">
               <Box style={iconContainerStyle}>
                 <Mshtml32528 style={iconStyle} />
                 <Text color="white" fontSize="20px" textAlign="center">
                   {t('Marketing')}
                 </Text>
               </Box>
-            </a>*/}
+            </a> */}
             <a href="https://www.windoge95.com/games" target="_blank" rel="noreferrer">
               <Box style={iconContainerStyle}>
                 <Gcdef100 style={iconStyle} />
