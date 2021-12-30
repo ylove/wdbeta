@@ -29,12 +29,14 @@ export default function Roadmap() {
   const [windogeSwap, toggleWindogeSwap] = React.useState(false)
   const [influencers, toggleInfluencers] = React.useState(false)
   const [audits, toggleAudits] = React.useState(false)
+  const [video, toggleVideo] = React.useState(true)
 
   const closeWebsiteInfo = () => toggleWebsiteInfo(false)
   const closeNFTCreator = () => toggleNFTCreator(false)
   const closeWindogeSwap = () => toggleWindogeSwap(false)
   const closeInfluencers = () => toggleInfluencers(false)
   const closeAudits = () => toggleAudits(false)
+  const closeVideo = () => toggleVideo(false)
 
   const bulletStyle: any = {
     marginTop: '16px',
@@ -441,6 +443,21 @@ export default function Roadmap() {
             </Link>
           </AutoColumn>
         </AutoRow>
+
+        { video && <Modal
+            defaultPosition={{ x: 20, y: 20 }}
+            icon={<Lock variant="16x16_4" />}
+            title="Welcome to windoge95"
+            closeModal={closeVideo}
+            width="90vw"
+            height="90vh"
+            style={modalStyle}
+            buttons={[{ value: 'Ok', onClick: closeVideo }]}
+          >
+            <Frame style={modalFrameStyle}>
+              <iframe width="100%" height="100%" src="https://www.youtube.com/embed/KtD3_GBOkYU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+            </Frame>
+          </Modal> }
 
         <TaskBar
           list={
