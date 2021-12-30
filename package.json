@@ -1,11 +1,11 @@
 {
-  "name": "windoge-2-0",
+  "name": "windoge-2",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "dev": "react-scripts start",
-    "start": "react-scripts build",
+    "start": "react-scripts start",
+    "build": "CI=false react-scripts build",
     "test": "react-scripts test --testPathIgnorePatterns=/src/__tests__/config/",
     "test:config": "react-scripts test --testPathPattern=/src/__tests__/config/",
     "integration-test": "start-server-and-test 'serve -s build -p 3000' http://localhost:3000 'cypress run'",
